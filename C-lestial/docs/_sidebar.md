@@ -1,0 +1,3 @@
+* [HOME](/)
+* [mathfuncs](mathfuncs.md)
+
