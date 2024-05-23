@@ -1,6 +1,6 @@
 # C-lestial documentation
 
-> git repository: 
+> git repository: https://github.com/aryan8923/C-lestial-Notes 
 
 This is the official page for the C-lestial library.
 
@@ -11,4 +11,3 @@ I will be writing the functions and upload them under [GNU GPLv3.0](https://www.
 I will also be citing resources along with the notes so that the reader can have a deeper look at the topic under study.
 
 
-\(x+2^2\)
