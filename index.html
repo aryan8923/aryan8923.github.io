@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CV</title>
+</head>
+<body>
+
+<div class="container">
+    <nav class="menu">
+        <ul>
+            <li onclick="showContent('about')">About me</li>
+            <li onclick="showContent('experience')">Experience</li>
+            <li onclick="showContent('conferences')">Conferences</li>
+            <li onclick="showContent('skills')">Skills</li>
+            <li onclick="showContent('personalProjects')">Personal Projects</li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <div id="about" class="content">
+            <h2>About me</h2>
+            <p>I am Aryan, a 3rd year BS-MS physics major at Indian Institute of Science Education and Research (IISER), Mohali,India <br>
+            I am interested in computational and theoretical aspects of physics. I have worked in N-body Simulations and Galactic Dynamics.<br>
+            I am also interested in creative writing including short stories and poems.
+        <br><br> Contact: ms21052[at]iisermohali[dot]ac[dot]in (preferred), aryan8923[at]gmail[dot]com 
+        </p>
+        </div>
+        <!-- Add this inside the "experience" div in your existing HTML -->
+        <div id="experience" class="content">
+            <h2>Experience</h2>
+                I have worked on projects involving numerical simulations of N-Body system and data analysis in Galactic Dynamics.
+
+                <h3>2024</h3>
+                    <ul>
+                        <li><b>[Currently Working] Studying Bar Pattern Speed in Galaxies in Different Environments using TNG50</b></li>
+                        <ul>
+                            <li>Prof. Mousumi Das and Prof. Sudhanshu Barway | Indian Institute of Astrophysics - IIA , Bangalore, India</li>
+                        </ul><br>
+                    </ul>
+                <h3>2023</h3>
+                <ul>
+                    <li><b>Many body simulations and their applications in characterising chaos and mean - motion resonances in meteoroid streams</b></li>
+                    <ul>
+                        <li>Prof. Jasjeet Singh Bagla | IISER, Mohali, India</li>
+                    </ul> <br>
+                    <li><b>Studying the identification, evolution and formation of Boxy/Peanut Bulges in TNG50</b></li>
+                    <ul><li>Dr Ankit Kumar | Indian Institute of Astrophysics - IIA, Banglore, India (Later, at UNAB and USM, Chile)</li></ul> <br>
+                    <li><b>(School) The Fascinating World of Flows (basic tools to describe flows, how they turn unstable and turbulent)</b></li>
+                    <ul><li>Prof. Rama Govindarajan (ICTS-TIFR, India) and Prof. Samriddhi Sankar Ray (ICTS-TIFR, India)</li></ul> <br>
+                    <li><b>(Workshop) Gravitational Wave Open Data Workshop (3 day workshop) (using gravitational-wave data for analysis)</b></li>
+                    <ul><li>GWOSC (formerly, LIGO Open Science Center)</li></ul><br>
+                </ul>
+                <h3>2022</h3>
+                <li><b>Made a few features of the database app (written by Dr Bhardwaj for CFSL, Chandigarh) windows-compatible</b></li>
+                <ul><li>Dr Vishal Bhardwaj | IISER, Mohali, India</li></ul><br>
+        </div>
+                
+
+
+
+        <div id="conferences" class="content"> 
+            <h2>Conferences and Meetings</h2>
+                    <ul>
+                        <li>42nd meeting of the Astronomical Society of India (ASI) jointly by Indian Institute of Science (IISc), Indian Space Research Organisation (ISRO) and Jawaharlal Nehru Planetarium (JNP) at Bengaluru </li>
+                        <ul><a href="https://ui.adsabs.harvard.edu/abs/2024asi..confP..41A/abstract">See Publication here</a></ul>
+                        <ul>31 January 2024 - 4 February 2024</ul>
+                    </ul>
+        </div>
+        <div id="skills" class="content">
+            <h2>Skills</h2>
+            <h3>Computing Libraries</h3>
+              <ul>
+                        <li>Machine Learning [SGD Classifiers; Polynomial Regression; SVMs] (Python - SciKit Learn)</li>
+                        <li>Scientific Computing (Python - SciPy)</li>
+                        <li>IllustrisTNG</li>
+                        <li>Gravitational Waves data analysis (Python - Gwosc, GWpy, PyCBC)</li>
+                        <li>Working with arrays (Python - NumPy)</li>
+                        <li>Data Visualisation (Python - Matplotlib, Seaborn; Julia - CairoMakie, GLMakie)</li>
+                        <li>Data storage, analysis and manipulation (Python - Pandas)</li>
+                        <li>GUI (Python - Kivy , Tkinter)</li>
+                        <li>SQL (Python - sqlite3)</li>
+                    </ul>
+            <h3>Numerical Analysis</h3>
+                    <ul>
+                    <li>ODEs : Runge-Kutta Method, Leap-frog integrator</li>
+                    <li>PDEs : relaxation method</li>
+                    <li>Integration : Trapezoidal rule, Monte Carlo</li>
+                    <li>Differentation</li>
+                    <li>Solving Non-linear equations : bisection method, Newton-Raphson Method</li>
+                    </ul>
+            <h3>Languages and Scripts</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>C</li>
+                        <li>FORTRAN</li>
+                        <li>Julia</li>
+                        <li>Bash</li>
+                        <li>Latex</li>
+                    </ul>
+
+        </div>
+
+        <div id="personalProjects" class="content">
+                    <h2>Personal Projects</h2>
+                    <p>This page contains all the projects that I do own my own.</p>
+                    <h3><a href="c_lestial/index.html">C-lestial</a></h3>
+                    <p>A git repository that contains notes, C codes and demonstrations for numerical analysis. The aim is to provide comprehensive notes on the topic. For this, I read from 
+                    the several textbooks and research articles.</p>
+                    <p> It also includes a library under the same name. I keep adding to the notes and the library whenever I read something.</p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

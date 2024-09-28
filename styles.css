@@ -1,0 +1,74 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Set background color to black */
+    color: white; /* Set all text color to white */
+}
+
+.container {
+    display: flex;
+}
+
+.menu {
+    background-color: black;
+    padding: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.content {
+    display: none;
+}
+
+.content h2 {
+    color: white; /* Set color of h2 in content to white */
+}
+
+.content p {
+    line-height: 1.6;
+    color: white; /* Set color of p in content to white */
+}
+
+/* Add these styles to your existing styles.css file */
+.timeline {
+    position: relative;
+    margin-top: 20px;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.timeline-date {
+    width: 80px;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 20px;
+    color: white; /* Set color of date in timeline to white */
+}
+
+.timeline-content {
+    flex-grow: 1;
+}
+
+/* Style adjustments for better visualization */
+
+.timeline p {
+    color: white; /* Set color of text in timeline content to white */
+}
