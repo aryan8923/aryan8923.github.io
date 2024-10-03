@@ -110,11 +110,45 @@
                 <div class="col-md-3">
                     <nav class="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="navigation">
                         <ul class="nav">
+                                <li><a href="#types">Types and Macros</a></li>
+                                <li><a href="#viewing">To view arrays and vectors</a></li>
                             <li><a href="#initialise">Initialising arrays and vectors</a></li>
                         </ul>
                     </nav >
                 </div>
                 <div class="col-md-9">
+                    <section id="types" class="section">
+                            <div class="row">
+                            <div class="col-md-12 left-align">
+                                    <h2 class="dark-text">Types and Macros<hr></h2>
+
+                                    <h3><code>struct Vector = {<a href="prec.html">DataType</a> dtype, int size, <a href="prec.html">Data</a> values}</code></h3>
+                                    <hr>
+                                    <h3><code>percentile_method</code></h3>
+                                    This is an enum used by <code>percentile_vector</code> function to label the various methods of finding the percentile. (Currently, the function only supports <code>INVERTED_CDF, LINEAR</code>)
+                                    <hr>
+                                    <h3><code>#define LENGTH_ARR(arr) sizeof(arr) / sizeof(*arr)</code></h3>
+                                    This gives the size of a 1-D array.
+
+
+                                    </div>
+                            </div>
+                        
+                    </section>
+
+                    <section id="viewing" class="section">
+                            <div class="row">
+                                <div class="col-md-12 left-align">
+                                    <h2 class="dark-text">To view arrays and vectors</h2>
+                                    <h3><code>void view_array(int size, precision_t arr[])</code></h3>
+                                    <h3><code>void view_vector(Vector *A)</code></h3>
+                                    
+                                </div>
+                                
+                            </div>
+                        
+                    </section>
+
 
                     <section id="initialise" class="section">
                             <div class="row">
@@ -122,7 +156,7 @@
                                     <h2 class="dark-text">Initialising arrays and vectors<hr></h2>
 
                                     <h3><code>Vector *zero_vector(DataType dtype, int size)</code></h3>
-                                    <p>Returns a vector of the given type and size.</p>
+                                    <p>Returns a vector of the given type and size with all elements as zero.</p>
 
                                     <pre class="brush: html; highlight: [2,4]">
                                         Vector *A_int = zero_vector(INT, 5);
@@ -147,6 +181,38 @@
 
 
                            </pre>
+<hr>
+                                    <h3><code>void free_vector(Vector *V)</code></h3>
+                                    Function to free memory assigned to vector V.
+<hr>
+                                    <h3><code>Vector *ones_vector(DataType dtype, int size)</code></h3>
+                                                                        <p>Returns a vector of the given type and size with all elements as ones.</p>
+
+                                    <pre class="brush: html; highlight: [2,4]">
+                                        Vector *A_int = zero_vector(INT, 5);
+                                        Vector *A_prec = zero_vector(PREC, 5);
+                                        Vector *A_str = zero_vector(STRING, 5);
+
+                                        view_vector(A_int);
+                                        view_vector(A_prec);
+                                        view_vector(A_str);
+
+                                        ```OUTPUT```
+
+                                        5-element Vector {int}
+                                        [ 1 , 1 , 1 , 1 , 1 ]
+
+                                        5-element Vector {precision_t}
+
+                                        [ 1.000000 , 1.000000 , 1.000000 , 1.000000 , 1.000000 ]
+                                        
+                                        5-element Vector {string}
+                                        [ 1 , 1 , 1 , 1 , 1 ]
+
+
+                           </pre>
+
+
                             </div>
                             </div>
                         

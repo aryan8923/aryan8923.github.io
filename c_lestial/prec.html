@@ -91,8 +91,8 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="big-title text-center">
-                            <h1>C-lestial documentation</h1>
-                            <p class="lead">This is the official page for the C-lestial library. <a href="https://github.com/aryan8923/C-lestial-Notes">(Git Repo with Notes)</a> </p>
+                            <h1>prec</h1>
+                            <p class="lead"> Contains miscellaneous structs, macros, type etc used by multiple files <a href="https://github.com/aryan8923/C-lestial-Notes">(Git Repo with Notes)</a> </p>
                         </div>
                         <!-- end title -->
                     </div>
@@ -110,69 +110,37 @@
                 <div class="col-md-3">
                     <nav class="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="navigation">
                         <ul class="nav">
-                            <li><a href="#allfuncs">List of all functions</a></li>
+                            <li><a href="#initialise">Initialising arrays and vectors</a></li>
                         </ul>
                     </nav >
                 </div>
                 <div class="col-md-9">
-                    <section class="welcome">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                               <h2 class="dark-text">Introduction<hr></h2>
-                                <div class="row">
-
-                                    <div class="col-md-12 full">
-                                        <!-- <div class="intro1"> -->
-                                        <!--     <ul> -->
-                                        <!--         <li><strong>Item Name : </strong>Gather Responsive Event Template</li> -->
-                                        <!--         <li><strong>Item Version : </strong> v 1.0</li> -->
-                                        <!--         <li><strong>Author  : </strong> <a href="http://themeforest.net/user/surjithctly" target="_blank">Surjith S M</a></li> -->
-                                        <!--         <li><strong>Support Forum : </strong> <a href="https://support.surjithctly.in/forums" target="_blank">https://support.surjithctly.in/forums</a></li> -->
-                                        <!--         <li><strong>License : </strong> <a href="#" target="_blank">Un License</a></li> -->
-                                        <!--     </ul> -->
-                                        <!-- </div> -->
-                                        <!---->
-                                        <hr>
-                                        <div>
-                                            <p>C-lestial is a project that I have started so as to learn numerical analysis. It contains notes, codes and demonstrations written in C. I wish to learn numerical analysis as well, so I read textbooks, research articles, etc and upload the notes here.
-                                                    <br><br>
-                                                    I will be writing the functions and upload them under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU GPLv3.0</a> license so you have the freedom to use, change and share the codes for any purposes. The library may not be as good as pre-existing ones, but the goal is to learn and let others learn. I will also be citing resources along with the notes so that the reader can have a deeper look at the topic under study.
-
-                                            </p>
-
-                                            
-
-                                            <h4>Requirements</h4>
-                                            <p><code>gcc</code> is required to compile the necessary code. One can use any other compiler if they wish.<p>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!-- end row -->
-                            </div>
-                        </div>
-                    </section>
-
-
-                    <section id="allfuncs" class="section">
+                    <section id="initialise" class="section">
                             <div class="row">
                             <div class="col-md-12 left-align">
-                                    <h2 class="dark-text">List of all functions<hr></h2>
-                                    <ul>
-                                        <li><a href="prec.html">prec</a></li>
-                                        <li><a href="array.html">array/array</a></li>
-                                        <li>array/linalg</li>
-                                        <li>DataFrames</li>
-                                        <li>mathfuncs</li>
-                                    
-                                    </ul>
-                                
-                            </div>
+
+                                    <h3><code>precision_t</code></h3>
+                                    This handles whether to use <code>double</code> or <code>single</code> float precision. By default, <code>precision_t</code> is set to double. One can edit the line <code>#define PRECISION double</code> to <code>#define PRECISION float</code> to change it to <code>float</code>.
+                                    <hr>
+                                    <h3><code>Data</code></h3>
+
+                                    <code>Data</code> is a union that stores some 1d array of data depending on the dtype.
+                                    Use <code>Data.int_data</code> to store int values. <code>Data.prec_data, Data.string_data</code> for precision_t, string respectively. This helps in making more complex types like Vectors, helping us to store different datatypes under the same type "Vector".  
+
+                                    <hr>
+                                    <h3><code>DataType</code></h3>
+                                    This helps us to label the dtypes. <code>INT, PREC, STRING</code> corresponds to int, precision_t, string type respectively.
+
+                                    <hr>
+                                    <h3><code>arith_oper</code></h3>
+                                    This helps us to label various arithmetic operations like add, subtract, multiply, divide and power as <code>ADD, SUB, MUL, DIV, POW</code>
+
+                                </div>
                             </div>
                         
                     </section>
+
+
 
                 </div>
                 <!-- // end .col -->
